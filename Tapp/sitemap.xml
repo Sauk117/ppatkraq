@@ -1,0 +1,12 @@
+<? xml version ="1.0" encoding="utf-8" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>
+			http://eldominio.com/index.html
+			http://eldominio.com/acerca.html
+			http://eldominio.com/servicios.html
+			http://eldominio.com/trabajos.html
+			http://eldominio.com/contacto.html
+		</loc>
+	</url>
+</urlset>
