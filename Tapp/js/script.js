@@ -67,3 +67,19 @@ jQuery(document).ready(function ($) {
 
 
 });
+function ShowApp(divNo){
+    document.getElementById("app"+divNo).style.visibility="visible";
+    for(x=1;x<5;x++){
+        if(x!=divNo){
+            document.getElementById("app"+x).style.visibility="hidden";
+        }
+    }
+    
+    setTimeout(
+        function(){
+            for(x=1;x<5;x++){
+                document.getElementById("app"+x).style.visibility="hidden";
+            }
+        },6000)
+}
+
