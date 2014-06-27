@@ -10,6 +10,7 @@ jQuery(document).ready(function ($) {
     button = $('.button');
     mywindow = $(window);
     htmlbody = $('html,body');
+    logo=$('.bottom-center');
 
 
     //Setup waypoints plugin
@@ -65,6 +66,12 @@ jQuery(document).ready(function ($) {
 
     });
 
+    logo.click(function (e) {
+        e.preventDefault();
+        dataslide = $(this).attr('data-slide');
+        goToByScroll(dataslide);
+
+    });
 
 });
 function ShowApp(divNo){
