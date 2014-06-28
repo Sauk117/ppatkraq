@@ -16,98 +16,106 @@
 		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 		<script type="text/javascript" src="js/waypoints.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type='text/javascript'>
+		 	window.onload = detectarCarga;
+		 	function detectarCarga() {
+		    document.getElementById("imgLOAD").style.display="none";
+		 }
+		</script>
 		<!-- La siguiente linea es para emular las etiquetas de html5 en navegadores viejitos-->
         <!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
 	<body>
-	
-		<header>
-		<nav >
-			<ul class="navigation">
-				<li data-slide="1" class="active">&nbsp;</li>
-				<li data-slide="2">&nbsp;</li>
-				<li data-slide="3">&nbsp;</li>
-				<li data-slide="4">&nbsp;</li>
-				<li data-slide="5">&nbsp;</li>
-				<li data-slide="6">&nbsp;</li>
-				<li data-slide="7">&nbsp;</li>
-			</ul>
+		<div id = "main"style="height:auto;">
+			<div id="imgLOAD" style="text-align:center;">
+				<img id="loadGif" src="img/loading.gif "/>
+				<img id="loadLogo" src="img/Logo-tApp.png "/>
+			</div> 
+			<header>
+			<nav >
+				<ul class="navigation">
+					<li data-slide="1" class="active">&nbsp;</li>
+					<li data-slide="2">&nbsp;</li>
+					<li data-slide="3">&nbsp;</li>
+					<li data-slide="4">&nbsp;</li>
+					<li data-slide="5">&nbsp;</li>
+					<li data-slide="6">&nbsp;</li>
+					<li data-slide="7">&nbsp;</li>
+				</ul>
 
-		</nav>	
-		</header>
-		<div id ="bottom-social-apps">
-			<ul>
-				<li><a id="twt" href="https://twitter.com/AgenciatApp" target="blank"><img src="img/socialApps/twt.png"></a></li>
-				<li><a id="fb" href="https://www.facebook.com/tAppComunicaciones" target="blank"><img src="img/socialApps/fb.png"></a></li>
-				<li><a id="ln" href="https://www.linkedin.com/pulse/activities/agencia-tapp+0_2EYGBRv_eWGPL431xiT0lh?trk=prof-0-sb-rcnt-act-link" target="blank"><img src="img/socialApps/in.png"></a></li>
-				<li><a id="gm" href="mailto:rodrigo.romandia@tapp.mx" ><img src="img/socialApps/mail.png"></a></li>
-			</ul>
-		</div>
-		<div id="logo-wrapper">
-			<a class="bottom-center" data-slide="1"><div id ="bottom-logo"  class="bottom-center"></div></a>
-		</div>
-		<div id ="bottom-menu">
-			<ul>
-				<li><img src="img/buttons/1.2.png" onclick ="ShowApp(1)"></li>
-				<li><img src="img/buttons/2.png" onclick ="ShowApp(2)"></li>
-				<li><img src="img/buttons/3.png" onclick ="ShowApp(3)"></a></li>
-				<li><img src="img/buttons/4.png" onclick ="ShowApp(4)"></a></li>
-			</ul>
-		</div>
-		<div id="app1" style="visibility:hidden;" ></div>
-		<div id="app2" style="visibility:hidden;"></div>
-		<div id="app3" style="visibility:hidden;"></div>
-		<div id="app4" style="visibility:hidden;"></div>
-		
-		<div id = "slide1" class="slide" data-slide="1" data-stellar-background-ratio="0.5">
-			<div class="wrapper">
-				<img class="text" src="img/1_txt.png"  data-stellar-vertical-offset="-200"alt="">
+			</nav>	
+			</header>
+			<div id ="bottom-social-apps">
+				<ul>
+					<li><a id="twt" href="https://twitter.com/AgenciatApp" target="blank"><img src="img/socialApps/twt.png"></a></li>
+					<li><a id="fb" href="https://www.facebook.com/tAppComunicaciones" target="blank"><img src="img/socialApps/fb.png"></a></li>
+					<li><a id="ln" href="https://www.linkedin.com/pulse/activities/agencia-tapp+0_2EYGBRv_eWGPL431xiT0lh?trk=prof-0-sb-rcnt-act-link" target="blank"><img src="img/socialApps/in.png"></a></li>
+					<li><a id="gm" href="mailto:rodrigo.romandia@tapp.mx" ><img src="img/socialApps/mail.png"></a></li>
+				</ul>
 			</div>
+			<div id="logo-wrapper">
+				<a class="bottom-center" data-slide="1"><div id ="bottom-logo"  class="bottom-center"></div></a>
+			</div>
+			<div id ="bottom-menu">
+				<ul>
+					<li><img src="img/buttons/1.2.png" onclick ="ShowApp(1)"></li>
+					<li><img src="img/buttons/2.png" onclick ="ShowApp(2)"></li>
+					<li><img src="img/buttons/3.png" onclick ="ShowApp(3)"></a></li>
+					<li><img src="img/buttons/4.png" onclick ="ShowApp(4)"></a></li>
+				</ul>
+			</div>
+			<div id="app1" style="visibility:hidden;" ></div>
+			<div id="app2" style="visibility:hidden;"></div>
+			<div id="app3" style="visibility:hidden;"></div>
+			<div id="app4" style="visibility:hidden;"></div>
 			
+			<div id = "slide1" class="slide" data-slide="1" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<img class="text" src="img/1_txt.png"  data-stellar-vertical-offset="-200"alt="">
+				</div>
+				
 
-		</div><!--End Slide 1-->
+			</div><!--End Slide 1-->
 
-		<div id = "slide2" class="slide" data-slide="2" data-stellar-background-ratio="0.5">
-			<div class="wrapper">
-				<img class="text" src="img/2_txt.png"  data-stellar-vertical-offset="-200"alt="">	
-			</div>
-		</div> <!--End Slide 2-->
+			<div id = "slide2" class="slide" data-slide="2" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<img class="text" src="img/2_txt.png"  data-stellar-vertical-offset="-200"alt="">	
+				</div>
+			</div> <!--End Slide 2-->
 
-		<div id = "slide3" class="slide" data-slide="3" data-stellar-background-ratio="0.5">
-			<div class="wrapper">
-				<img class="text" src="img/3_txt.png"  data-stellar-vertical-offset="-200"alt="">	
-			</div>
-		</div><!--End Slide 3-->
+			<div id = "slide3" class="slide" data-slide="3" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<img class="text" src="img/3_txt.png"  data-stellar-vertical-offset="-200"alt="">	
+				</div>
+			</div><!--End Slide 3-->
 
-		<div id = "slide4" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
-			<div class="wrapper">
-				<img class="text" src="img/4_txt.png"  data-stellar-vertical-offset="-200"alt="">
-			</div>
-		</div><!--End Slide 4-->
+			<div id = "slide4" class="slide" data-slide="4" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<img class="text" src="img/4_txt.png"  data-stellar-vertical-offset="-200"alt="">
+				</div>
+			</div><!--End Slide 4-->
 
-		<div id = "slide5" class="slide" data-slide="5" data-stellar-background-ratio="0.5">
-			<div class="wrapper">
-				<img class="text" src="img/5_txt.png"  data-stellar-vertical-offset="-200"alt="">
-			</div>
-		</div> <!--End Slide 5-->
+			<div id = "slide5" class="slide" data-slide="5" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<img class="text" src="img/5_txt.png"  data-stellar-vertical-offset="-200"alt="">
+				</div>
+			</div> <!--End Slide 5-->
 
-		<div id = "slide6" class="slide" data-slide="6" data-stellar-background-ratio="0.5">
-			<div class="wrapper">
-				<img class="text" src="img/6_txt.png"  data-stellar-vertical-offset="-200"alt="">	
-			</div>
-		</div> <!--End Slide 6-->
+			<div id = "slide6" class="slide" data-slide="6" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<img class="text" src="img/6_txt.png"  data-stellar-vertical-offset="-200"alt="">	
+				</div>
+			</div> <!--End Slide 6-->
 
-		<div id = "slide7" class="slide" data-slide="7" data-stellar-background-ratio="0.5">
-			<div class="wrapper">
-				<img class="text" src="img/7_txt.png"  data-stellar-vertical-offset="-200"alt="">	
-			</div>
-		</div>	<!--End Slide 7-->
+			<div id = "slide7" class="slide" data-slide="7" data-stellar-background-ratio="0.5">
+				<div class="wrapper">
+					<img class="text" src="img/7_txt.png"  data-stellar-vertical-offset="-200"alt="">	
+				</div>
+			</div>	<!--End Slide 7-->
 
-		<footer>
-			
-		</footer>
+		</div>
 	</body>
 
 </html>
