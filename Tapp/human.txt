@@ -1,5 +1,10 @@
-/* hell jumper - ___.com */
+/* www.Taap.com */
 /* TEAM */
-Creator: Kevin Arriaga
+
+Designer:Daniel Olivares Solis
+Contact:daniel [at] q-ark.mx
+From:México City,México
+
+Developer: Kevin Arriaga
 Contact: kevin.saaul [at] gmail.com
 From:México City, México
